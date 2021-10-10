@@ -8,6 +8,7 @@ function Modal(props) {
       <button className='btn' onClick={props.onClose}>
         Confirm
       </button>
+      <p>{props.stateVar}</p>
     </div>
   );
 }
