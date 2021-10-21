@@ -26,14 +26,14 @@ function Todo(props) {
   return (
     <div className='card'>
       <h2>{props.text}</h2>
-      <p>{refVar.current}</p>
+      <p className='p2'>{refVar.current}</p>
       <div className='actions'>
         <button className='btn' onClick={showModalHandler}>
-          Delete
+          Deletett
         </button>
       </div>
       <input ref={inputRef} onChange={inputPharagraphChange} type="text"/>
-      <p>{inputUseState}</p>
+      <p className='p2'>{inputUseState}</p>
       {showModal && <Backdrop onClick={closeModalHandler} />}
       {showModal && <Modal stateVar={refVar.current} text='Are you sure?' onClose={closeModalHandler} />}
     </div>
